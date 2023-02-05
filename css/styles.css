@@ -1,8 +1,29 @@
 /* WebStudio + Portfolio */
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
    color: #434455;
+}
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .link{
@@ -28,12 +49,42 @@ body{
 
 /* Navigation */
 
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-flex{
+    display: flex;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list{
+    display: flex;
+}
+
 .nav-link{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #2E2F42;
     letter-spacing: 0.02em;
+}
+
+.nav-first{
+    padding-right: 40px;
+}
+
+.nav-second{
+    padding-right: 40px;
+}
+
+.nav-third{
+    padding-right: 332px;
 }
 
 .nav-link:hover,
@@ -62,10 +113,15 @@ body{
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-right: 76px;
 
 }
 
 /* Adress */
+
+.adress-list{
+    display: inline-flex;
+}
 
 .adress-link{
     color: #434455;
@@ -77,6 +133,10 @@ body{
 
 }
 
+.adress-first{
+    padding-right: 40px;
+}
+
 .adress-link:hover,
 .adress-link:focus{
     color: #404bbf;
@@ -86,13 +146,26 @@ body{
 
 .hero{
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    display: flex;
+}
+
+.hero-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.06;}
+    line-height: 1.06;
+    width: 494px;
+    height: 120px;
+    margin-bottom: 64px;
+}
 
 .hero-button{
     background-color: #4D5AE5;
@@ -102,6 +175,10 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px (0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    
 }
 
 .hero-button:hover,
@@ -112,12 +189,21 @@ body{
 /* 1 Section,
 portfolio section */
 
+.solution{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-list{
+    display: flex;
+}
+
 .list-head{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #2E2F42;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 }
 
 .list-text{
@@ -125,6 +211,17 @@ portfolio section */
     line-height: 1.5;
     color: #434455;
     letter-spacing: 0.02em;
+}
+
+.solution-first{
+    padding-right: 24px;
+}
+
+.solution-second{
+    padding-right: 24px;
+}
+.solution-third{
+    padding-right: 24px;
 }
 
 /* 2-nd Section */
@@ -135,14 +232,56 @@ portfolio section */
     line-height: 40px;
     letter-spacing: 0.02em;
     text-transform: capitalize; 
+    text-align: center;
 }
+
+.list-img{
+    padding-top: 72px;
+    padding-bottom: 120px;
+    display: flex;
+}
+
+.img-first{
+    padding-right: 24px;
+}
+
+.img-second{
+    padding-right: 24px;
+}
+
+/* 3-rd section */
 
 .sec-people{
     background-color: #F4F4FD;
 }
 
+.people-list{
+    display: flex;
+    padding-bottom: 120px;
+
+}
+
 .img-fon{
     background-color: #FFFFFF;
+}
+
+.men-one{
+    margin-right: 24px;
+    order: 1;
+}
+
+.men-two{
+    margin-right: 24px;
+    order: 2;
+}
+
+.men-three{
+    margin-right: 24px;
+    order: 3;
+}
+
+.men-four{
+    order: 4;
 }
 
 .sec-head{
@@ -151,6 +290,9 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+text-align: center;
+padding-top: 120px;
+padding-bottom: 72px;
 }
 
 .people-name{
@@ -159,18 +301,25 @@ text-transform: capitalize;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 .sec-text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 /* Footer */
 
 .footer{
     background-color: #2E2F42;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .footer-logo{
@@ -198,10 +347,19 @@ text-transform: capitalize;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+    width: 264px;
+    height: 72px;
+    margin-top: 16px;
 }
 
 /* Portfolio */
 
+.buttons{
+    padding-top: 96px;
+    padding-bottom: 72px;
+    display: flex;
+    justify-content: center;
+}
 
 .button{
     font-weight: 500;
@@ -211,10 +369,84 @@ text-transform: capitalize;
     color: #4D5AE5;
     background: #F4F4FD;
     cursor: pointer;
+    padding:12px 24px;
+    border: #E7E9FC;
+    border-radius: 4%;
+    text-align: center;
+    margin-right: 24px;
 }
 
 .button:hover,
 .button:focus{
     color: #FFFFFF;
     background: #404BBF;
+}
+
+/* Photo List */
+
+.photo-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
+
+.photo-one{
+    height: 420px;
+    margin-right: 24px;
+    margin-bottom: 48px;
+    border: 1px solid #E7E9FC;
+}
+
+.photo-two{
+    height: 420px;
+    margin-right: 24px;
+    margin-bottom: 48;
+    border: 1px solid #E7E9FC;
+}
+
+.photo-three{
+    height: 420px;
+    border: 1px solid #E7E9FC;
+    margin-bottom: 48;
+
+}
+
+.photo-four{
+    height: 420px;
+    margin-right: 24px;
+    margin-bottom: 48px;
+    border: 1px solid #E7E9FC;
+}
+
+.photo-five{
+    height: 420px;
+    margin-right: 24px;
+    border: 1px solid #E7E9FC;
+}
+
+.photo-six{
+    height: 420px;
+    border: 1px solid #E7E9FC;
+}
+
+.photo-seven{
+    margin-right: 24px;
+    border: 1px solid #E7E9FC;
+}
+.photo-eight{
+    margin-right: 24px;
+    border: 1px solid #E7E9FC;
+}
+.photo-nine{
+    border: 1px solid #E7E9FC;
+}
+
+.mark{
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.info{
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
