@@ -1,5 +1,11 @@
 /* WebStudio + Portfolio */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 p,
 h1,
 h2,
@@ -18,6 +24,7 @@ ul{
 body{
     font-family: 'Roboto', sans-serif;
    color: #434455;
+   margin: 0;
 }
 .container{
     width: 1158px;
@@ -75,16 +82,12 @@ body{
     letter-spacing: 0.02em;
 }
 
-.nav-first{
+.nav-li{
     margin-right: 40px;
 }
 
-.nav-second{
-    margin-right: 40px;
-}
-
-.nav-third{
-    margin-right: 332px;
+.nav-li:last-child{
+    margin: 0;
 }
 
 .nav-link:hover,
@@ -118,6 +121,9 @@ body{
 }
 
 /* Adress */
+.adress{
+    margin-left: auto;
+}
 
 .adress-list{
     display: inline-flex;
@@ -133,8 +139,11 @@ body{
 
 }
 
-.adress-first{
+.adress-li{
     margin-right: 40px;
+}
+.adress-li:last-child{
+    margin: 0;
 }
 
 .adress-link:hover,
@@ -162,9 +171,10 @@ body{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.06;
-    width: 494px;
+    width: 496px;
     height: 120px;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
+    text-align: center;
 }
 
 .hero-button{
@@ -213,15 +223,12 @@ portfolio section */
     letter-spacing: 0.02em;
 }
 
-.solution-first{
+.solution-li{
     margin-right: 24px;
 }
 
-.solution-second{
-    margin-right: 24px;
-}
-.solution-third{
-    margin-right: 24px;
+.solution-li:last-child{
+    margin: 0;
 }
 
 /* 2-nd Section */
@@ -241,12 +248,11 @@ portfolio section */
     display: flex;
 }
 
-.img-first{
+.img-li{
     margin-right: 24px;
 }
-
-.img-second{
-    margin-right: 24px;
+.img-li:last-child{
+    margin: 0;
 }
 
 /* 3-rd section */
@@ -263,25 +269,13 @@ portfolio section */
 
 .img-fon{
     background-color: #FFFFFF;
-}
-
-.men-one{
     margin-right: 24px;
-    order: 1;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.men-two{
-    margin-right: 24px;
-    order: 2;
-}
-
-.men-three{
-    margin-right: 24px;
-    order: 3;
-}
-
-.men-four{
-    order: 4;
+.img-fon:last-child{
+    margin: 0;
 }
 
 .sec-head{
@@ -295,6 +289,11 @@ padding-top: 120px;
 padding-bottom: 72px;
 }
 
+.fon-text{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .people-name{
     font-weight: 500;
     font-size: 20px;
@@ -302,8 +301,7 @@ padding-bottom: 72px;
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .sec-text{
     font-size: 16px;
@@ -311,7 +309,6 @@ padding-bottom: 72px;
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    padding-bottom: 32px;
 }
 
 /* Footer */
@@ -373,7 +370,14 @@ padding-bottom: 72px;
     border: #E7E9FC;
     border-radius: 4%;
     text-align: center;
+}
+
+.button-port{
     margin-right: 24px;
+}
+
+.button-port:last-child{
+    margin: 0;
 }
 
 .button:hover,
@@ -384,67 +388,31 @@ padding-bottom: 72px;
 
 /* Photo List */
 
-.photo-list{
+.photo-all{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 120px;
 }
 
-.photo-one{
-    height: 420px;
+.photo{
     margin-right: 24px;
     margin-bottom: 48px;
-    border: 1px solid #E7E9FC;
 }
 
-.photo-two{
-    height: 420px;
-    margin-right: 24px;
-    border: 1px solid #E7E9FC;
+.photo:nth-child(3n){
+    margin-right: 0;
 }
 
-.photo-three{
-    height: 420px;
-    border: 1px solid #E7E9FC;
-
+.photo:nth-child(n+7){
+    margin-bottom: 120px;
 }
 
-.photo-four{
-    height: 420px;
-    margin-right: 24px;
-    margin-bottom: 48px;
-    border: 1px solid #E7E9FC;
-}
-
-.photo-five{
-    height: 420px;
-    margin-right: 24px;
-    border: 1px solid #E7E9FC;
-}
-
-.photo-six{
-    height: 420px;
-    border: 1px solid #E7E9FC;
-}
-
-.photo-seven{
-    margin-right: 24px;
-    border: 1px solid #E7E9FC;
-}
-.photo-eight{
-    margin-right: 24px;
-    border: 1px solid #E7E9FC;
-}
-.photo-nine{
-    border: 1px solid #E7E9FC;
-}
-
-.mark{
-    padding-top: 32px;
-    padding-left: 16px;
+.image{
+    display: block;
 }
 
 .info{
+    border: 1px solid #E7E9FC;
+    padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
 }
