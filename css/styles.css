@@ -200,8 +200,8 @@ body{
 portfolio section */
 
 .solution{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 .section-list{
     display: flex;
@@ -213,7 +213,7 @@ portfolio section */
     line-height: 1.2;
     color: #2E2F42;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .list-text{
@@ -224,6 +224,7 @@ portfolio section */
 }
 
 .solution-li{
+    width: 264px;
     margin-right: 24px;
 }
 
@@ -243,8 +244,8 @@ portfolio section */
 }
 
 .list-img{
-    padding-top: 72px;
-    padding-bottom: 120px;
+    margin-top: 72px;
+    margin-bottom: 120px;
     display: flex;
 }
 
@@ -263,7 +264,7 @@ portfolio section */
 
 .people-list{
     display: flex;
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 
 }
 
@@ -280,13 +281,13 @@ portfolio section */
 
 .sec-head{
     font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-text-align: center;
-padding-top: 120px;
-padding-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 72px;
 }
 
 .fon-text{
@@ -352,8 +353,8 @@ padding-bottom: 72px;
 /* Portfolio */
 
 .buttons{
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-top: 96px;
+    margin-bottom: 72px;
     display: flex;
     justify-content: center;
 }
@@ -388,9 +389,10 @@ padding-bottom: 72px;
 
 /* Photo List */
 
-.photo-all{
+.photo-list{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 120px;
 }
 
 .photo{
@@ -403,7 +405,7 @@ padding-bottom: 72px;
 }
 
 .photo:nth-child(n+7){
-    margin-bottom: 120px;
+    margin-bottom: 0;
 }
 
 .image{
@@ -411,7 +413,9 @@ padding-bottom: 72px;
 }
 
 .info{
-    border: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
